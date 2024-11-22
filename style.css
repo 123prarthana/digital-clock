@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50vh;
+  background-color: #2f363e;
+}
+
+#time {
+  display: flex;
+  gap: 40px;
+  color: #ffffff;
+
+}
+
+
+#time .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+}
+
+#time .ap {
+  position: relative;
+  font-size: 36px;
+}
+
+#time circle svg {
+  position: relative;
+  height: 150px;
+  width: 150px;
+
+}
+
+#time div svg circle {
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+  stroke: #191919;
+  stroke-width: 4;
+  transform: translate(5px, 5px);
+
+
+}
+
+#time div svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+}
+
+svg {
+  transform: rotate(270deg);
+}
